@@ -1,0 +1,11 @@
+mat-sidenav-container {
+    width:100%;
+    height:100%;
+}
+mat-sidenav-content{
+    height:100%;
+}
+mat-list-item mat-icon:hover {
+    color: red;
+    transform: scale(1.5);
+}

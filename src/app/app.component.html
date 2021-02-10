@@ -1,0 +1,14 @@
+<mat-sidenav-container>
+    <!-- Sidenav -->
+    <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'push' : 'side'" [(opened)]="opened" [fixedInViewport]="true" [fixedTopGap]>
+        <mat-nav-list>
+            <mat-list-item *ngFor="let menu of sideMenuList" routerLinkActive="active" [routerLink]="menu.link" [matTooltip]="menu.toolTip" matTooltipPosition="right">
+                <mat-icon>{{menu.icon}}</mat-icon></mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <!-- Main content -->
+    <mat-sidenav-content>
+        
+    </mat-sidenav-content>
+</mat-sidenav-container>
